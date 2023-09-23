@@ -12,9 +12,9 @@ Route::post('/register', [RegisteredUserController::class, 'store'])
                 ->middleware('guest')
                 ->name('register');
 
-Route::post('/login', [AuthenticatedSessionController::class, 'store'])
+Route::post('/logins', [AuthenticatedSessionController::class, 'store'])
                 ->middleware('guest')
-                ->name('login');
+                ->name('logins');
 
 Route::post('/forgot-password', [PasswordResetLinkController::class, 'store'])
                 ->middleware('guest')
