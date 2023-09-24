@@ -1,0 +1,8 @@
+php artisan make:model modelname -mc means migration and controller
+
+
+
+
+commands i did
+php artisan migrate:fresh to drop database tables
+php artisan migrate --seed seed the databse with data
