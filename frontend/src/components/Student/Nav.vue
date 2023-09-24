@@ -1,7 +1,17 @@
 <script setup>
+import { defineComponent } from 'vue'
 import { useAuthStore } from "/src/stores/auth";
 
+
+
+
 const authStore = useAuthStore();
+</script>
+<script>
+
+export default defineComponent({
+    name:"Nav"
+});
 </script>
 <template>
   <nav class="rounded bg-indigo-900 text-white px-2 py-2.5 sm:px-4">

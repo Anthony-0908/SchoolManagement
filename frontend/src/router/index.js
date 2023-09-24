@@ -27,6 +27,29 @@ const routes = [
 
 
   // Admin
+
+  { path: "/Admins/", name: "AdminHome", component:() => import("../components/Admin/Home.vue")},
+//   {
+//     path: "/Admin/login",
+//     name: "Login",
+//     component: () => import("../components/Student/Login.vue"),
+//   },
+//   {
+//     path: "/Admin/Studentregister",
+//     name: "Register",
+//     component: () => import("../components/Student/Register.vue"),
+//   },
+//   {
+//     path: "/Admin/forgot-password",
+//     name: "ForgotPassword",
+//     component: () => import("../components/Student/ForgotPassword.vue"),
+//   },
+//   {
+//     path: "/Admin/password-reset/:token",
+//     name: "ResetPassword",
+//     component: () => import("../components/Student/ResetPassword.vue"),
+//   },
+
 ];
 
 const router = createRouter({
