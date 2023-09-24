@@ -1,29 +1,32 @@
 import { createRouter, createWebHistory } from "vue-router";
 
-import Home from "../components/Home.vue";
+import Home from "../components/Student/Home.vue";
 
 const routes = [
-  { path: "/", name: "Home", component: Home },
+  { path: "/students/", name: "Home", component: Home },
   {
-    path: "/login",
+    path: "/student/login",
     name: "Login",
-    component: () => import("../components/Login.vue"),
+    component: () => import("../components/Student/Login.vue"),
   },
   {
-    path: "/register",
+    path: "/student/register",
     name: "Register",
-    component: () => import("../components/Register.vue"),
+    component: () => import("../components/Student/Register.vue"),
   },
   {
-    path: "/forgot-password",
+    path: "/student/forgot-password",
     name: "ForgotPassword",
-    component: () => import("../components/ForgotPassword.vue"),
+    component: () => import("../components/Student/ForgotPassword.vue"),
   },
   {
-    path: "/password-reset/:token",
+    path: "/student/password-reset/:token",
     name: "ResetPassword",
-    component: () => import("../components/ResetPassword.vue"),
+    component: () => import("../components/Student/ResetPassword.vue"),
   },
+
+
+  // Admin
 ];
 
 const router = createRouter({
